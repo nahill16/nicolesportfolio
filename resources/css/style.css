@@ -1,0 +1,149 @@
+p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #1B7BA0;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    background-color: white;
+}
+
+.navbar {
+    width: 100%;
+    text-align: right;
+
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 15px;
+    /* border: 1px black solid; */
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#contact {
+    padding: 5px;
+    color:white;
+    background-color: #3B98BB;
+    
+}
+
+/* Banner */
+.banner{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+.hello{
+    font-size: 22px;
+    font-weight: bold;
+    text-align:center;
+    margin: 0px;
+}
+.greeting-text{
+    margin: 0px 50px;
+    /* border: 1px black solid; */
+}
+
+.greeting-text h1{
+    font-size: 100px;
+    /* border: 1px black solid; */
+    margin: 0px;
+}
+
+.greeting-text h4, .greeting-text h5{
+    font-size: 20px;
+    margin: 0px;
+}
+
+.aboutMeButton{
+    border: 1px #3B98BB solid;
+    border-radius: 10px;
+    color: white;
+    background-color: #3B98BB;
+    text-decoration: none;
+    box-shadow: 0px 3px;
+    padding: 5px;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.aboutMeButton:active{
+    margin-top: 3px;
+    color: black;
+    box-shadow: 0px 0px;
+}
+
+.aboutMeButton a {
+    color: white;
+}
+
+#profile {
+    width: 700px;
+    height: 600px;
+    margin: 0px;
+    /* border: 1px black solid; */
+}
+
+/* About Me */
+.aboutMe{
+    width: 100%;
+    display: inline-flex;
+    /* border: 1px black solid; */
+    padding: 20px 0px 20px 0px;
+}
+ #aboutMePhoto{
+    width: 575px;
+    height: 400px;
+    margin-top: 50px;
+ }
+.aboutMeText{
+    width: 600px;
+    margin-top: 25px;
+    margin-left: 200px;
+}
+
+
+/* Skills */
+.skills{
+    width: 90%;
+    /* border: 1px black solid; */
+    padding: 0px 50px;
+}
+
+.projects {
+    margin-left: 50px;
+}
+
+.emg-robot{
+    width: 50%;
+    /* border: 1px black solid; */
+    margin: 0px auto;
+    text-align: center;
+}
+.emg-text{
+    width: 600px;
+    /* border: 1px black solid; */
+    margin: 0px auto;
+}
