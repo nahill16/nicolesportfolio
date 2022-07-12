@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="resources\css\style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+<!-- Navigation -->
+    <header class="header">
+        <nav>
+            <a href="index.html"> <img id="logo" src="resources\images\NHLogo.png"></a>
+            <ul class="navbar">
+                <li><a href="index.html#aboutMe">About Me</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a>Certificates</a></li>
+                <li><a>Resume</a></li>
+                <li id="contact" class="contact"><a href="contact.html"> Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1 class="contactHeading">Contact</h1>
+        <section class="contactPage">
+            <div class="contactForm">
+            <br>
+<!-- Contact Page Input Section -->
+<!-- Form subission to the following 
+email address will not work until
+ you learn back-end -->
+            <form action="mailto:nahill16@gmail.com" action="POST"> 
+                <label for="first-name">First Name: </label>
+                <input id="first-name" type="text" name="first-name" required>
+                    <br>
+                    <br>
+                <label for="last-name">Last Name: </label>
+                <input id="first-name" type="text" name='last-name' required>
+                <br>
+                <br>
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email" required>
+                    <br>
+                    <br>
+                <label for="message">Message: </label>
+                <br>
+                <textarea id="message" name="message" rows="10" cols="50" required></textarea>
+                <br>
+                <br>
+                <input class="submitButton" type="submit" value="Send">
+            </form>
+            </div>
+        </section>
+        
+<!-- Social Media Section -->
+        <section class="socialMedia">
+            <h3> Connect with me online!</h3>
+            <a href="https://www.linkedin.com/in/nicole-hill-955b14125/" target="_blank"><img id="linkedIn" src="resources\images\linkedInLogo.png"></a>
+            <a href="https://github.com/nahill16" target="_blank"><img id="gitHub" src="resources\images\gitHubLogo.png"></a>
+        </section>
+    </main>
+</body>
+</html>

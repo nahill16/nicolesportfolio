@@ -17,15 +17,36 @@ a {
 }
 
 
-/* Navigation */
-nav {
-    display: flex;
-    background-color: white;
+#logo{
+    height: 75px;
+    width:75px;
+    margin-left: 20px;
+    /* border: 1px black solid; */
+    /* display:flex; */
+    /* justify-content: flex-start; */
 }
+/* Navigation */
+ nav {
+    width:100%;
+    display: inline-flex;
+    /* position:relative; */
+    /* justify-content: flex-end; */
+    /* background-color: white; */
+    /* border: 1px blue solid; */
+    /* margin-left:600px; */
+    /* text-align: right; */
+
+} 
 
 .navbar {
     width: 100%;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    /* text-align: right; */
+    /* border: 1px black solid; */
+    /* align-items: center; */
+    /* display:flex; */
+    /* justify-content: right; */
 
 }
 
@@ -43,8 +64,15 @@ nav {
     padding: 5px;
     color:white;
     background-color: #3B98BB;
-    
+    border: 1px #3B98BB solid;
+    border-radius: 10px;
+    text-decoration: none;
 }
+#contact a {
+    color: white;
+}
+
+
 
 /* Banner */
 .banner{
@@ -65,7 +93,7 @@ nav {
     /* border: 1px black solid; */
 }
 
-.greeting-text h1{
+.greeting-text h1, .contactHeading h1{
     font-size: 100px;
     /* border: 1px black solid; */
     margin: 0px;
@@ -76,7 +104,7 @@ nav {
     margin: 0px;
 }
 
-.aboutMeButton{
+.aboutMeButton, .submitButton{
     border: 1px #3B98BB solid;
     border-radius: 10px;
     color: white;
@@ -89,13 +117,13 @@ nav {
     font-weight: bold;
 }
 
-.aboutMeButton:active{
+.aboutMeButton:active, .submitButton:active, #contact:active{
     margin-top: 3px;
     color: black;
     box-shadow: 0px 0px;
 }
 
-.aboutMeButton a {
+.aboutMeButton a, .submitButton a {
     color: white;
 }
 
@@ -146,4 +174,37 @@ nav {
     width: 600px;
     /* border: 1px black solid; */
     margin: 0px auto;
+}
+/* Contact */
+.contactHeading{
+    text-align: center;
+    /* color: #1B7BA0; */
+}
+
+.contactPage{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: gainsboro; */
+}
+
+.contactForm{
+    width:50%;
+    text-align: center;
+    border: 3px #3B98BB solid;
+    padding: 20px 0px;
+    background-color: gainsboro;
+}
+
+label, input {
+    font-size: 20px;
+}
+
+.socialMedia{
+    text-align: center;
+}
+
+#linkedIn, #gitHub {
+    height: 50px;
+    width: 50px;
 }
