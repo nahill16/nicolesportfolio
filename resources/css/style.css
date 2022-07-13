@@ -21,32 +21,17 @@ a {
     height: 75px;
     width:75px;
     margin-left: 20px;
-    /* border: 1px black solid; */
-    /* display:flex; */
-    /* justify-content: flex-start; */
 }
 /* Navigation */
  nav {
     width:100%;
     display: inline-flex;
-    /* position:relative; */
-    /* justify-content: flex-end; */
-    /* background-color: white; */
-    /* border: 1px blue solid; */
-    /* margin-left:600px; */
-    /* text-align: right; */
-
 } 
 
 .navbar {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    /* text-align: right; */
-    /* border: 1px black solid; */
-    /* align-items: center; */
-    /* display:flex; */
-    /* justify-content: right; */
 
 }
 
@@ -93,10 +78,13 @@ a {
     /* border: 1px black solid; */
 }
 
-.greeting-text h1, .contactHeading h1{
+.greeting-text h1, .contact-h1, .certificates-h1, .resume-h1{
     font-size: 100px;
-    /* border: 1px black solid; */
     margin: 0px;
+}
+
+.contact-h1, .certificates-h1, .resume-h1{
+    text-align:center;
 }
 
 .greeting-text h4, .greeting-text h5{
@@ -175,17 +163,51 @@ a {
     /* border: 1px black solid; */
     margin: 0px auto;
 }
-/* Contact */
+
+/* Certificates Page */
+.certificatesPage{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.certificates img{
+    height:600px;
+    width:1000px;
+}
+
+.certificates{
+    text-align:center;
+    background-color: gainsboro;
+    padding:20px 90px;
+    border:3px #3B98BB solid;   
+}
+
+.certificates h2{
+    text-decoration: underline;
+}
+
+/* Resume Page */
+.resumePage{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.resume{
+    text-align:center;
+    background-color: gainsboro;
+    padding:90px 90px;
+    border:3px #3B98BB solid;
+}
+
+/* Contact Page*/
 .contactHeading{
     text-align: center;
-    /* color: #1B7BA0; */
 }
 
 .contactPage{
     width:100%;
     display: flex;
     justify-content: center;
-    /* background-color: gainsboro; */
 }
 
 .contactForm{
