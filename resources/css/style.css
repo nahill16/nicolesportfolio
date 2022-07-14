@@ -23,7 +23,11 @@ a {
     margin-left: 20px;
 }
 /* Navigation */
- nav {
+.mobile-nav{
+    display: none;
+}
+
+ nav .desktop-nav {
     width:100%;
     display: inline-flex;
 } 
@@ -32,12 +36,11 @@ a {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-
 }
 
 .navbar li {
     display: inline-block;
-    padding: 5px;
+    padding: 2px;
     margin: 0 15px;
     /* border: 1px black solid; */
     color: black;
@@ -57,6 +60,42 @@ a {
     color: white;
 }
 
+@media only screen and (max-width:768px){
+    .mobile-nav{
+        display: none;
+    }
+
+   #logo {
+    display: none;
+   }
+
+   .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+@media only screen and (max-width:425px){
+    nav .mobile-nav{
+        display: flex;
+    }  
+
+    nav .desktop-nav{
+        display: none;
+    }
+    nav .mobile-nav li{
+        font-size: 15px;
+    }
+    .navbar{
+        padding-left: 0px;
+    }
+
+    #logo{
+        display: block;
+    }
+    
+}
 
 
 /* Banner */
@@ -65,6 +104,16 @@ a {
     display: inline-flex;
     align-items: center;
     background-color: gainsboro;
+}
+
+@media only screen and (max-width:768px){
+    .banner{
+        display: block;
+        text-align: center;
+    }
+    .hello{
+        padding-top: 20px;
+    }
 }
 
 .hello{
@@ -121,6 +170,20 @@ a {
     margin: 0px;
     /* border: 1px black solid; */
 }
+@media only screen and (max-width:425px){
+    .banner{
+        display: block;
+        width: 100%;
+    }
+    #profile {
+        width: 400px;
+        height: 400px;
+        margin: 0px;
+    }
+    .aboutMeButton{
+        display: none;    }
+}
+
 
 /* About Me */
 .aboutMe{
@@ -139,8 +202,41 @@ a {
     margin-top: 25px;
     margin-left: 200px;
 }
+#aboutMeSmallDevices{
+    display: none;
+}
 
+@media only screen and (max-width:768px){
+    .aboutMe{
+        display: block;
+        text-align: center;
+    }
 
+    .aboutMeText{
+        margin-left: 75px;
+    }
+    #aboutMeSmallDevices{
+        display: block;
+    }
+    #aboutMe{
+        display:none;
+    }
+}
+@media only screen and (max-width:425px){
+    #aboutMeSmallDevices{
+        display: block;
+    }
+    #aboutMePhoto{
+        width: 350px;
+        height: 300px;
+    }
+    .aboutMeText{
+        width: 350px;
+        margin-left: 20px;
+        text-align: left;
+    
+    }
+}
 /* Skills */
 .skills{
     width: 90%;
@@ -148,6 +244,7 @@ a {
     padding: 0px 50px;
 }
 
+/* Projects */
 .projects {
     margin-left: 50px;
 }
@@ -173,6 +270,27 @@ a {
     margin: 0px auto;
 }
 
+@media only screen and (max-width:768px){
+    .emg-text{
+        width:400px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .emg-robot{
+        width:100%;
+    }
+    .emg-text{
+        width:300px;
+        margin:0px;
+    }
+    #robotPhoto, #emgCircuit{
+        margin:0px;
+        height:300px;
+        width:300px;
+    }
+}
+
 /* Certificates Page */
 .certificatesPage{
     width:100%;
@@ -194,6 +312,63 @@ a {
 .certificates h2{
     text-decoration: underline;
 }
+.mobile-nav{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    .mobile-nav{
+        display: none;
+    }
+
+   #logo {
+    display: none;
+   }
+
+   .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    .certificates img{
+        height:400px;
+        width:600px;
+    }
+    .certificates h2{
+        font-size:30px;
+    }
+    .certificates{
+        padding:10px 50px;
+    }
+}
+@media only screen and (max-width:425px){
+    nav .desktop-nav{
+        display: none;
+    }
+
+    nav .mobile-nav{
+        display: flex;
+    }  
+
+    nav .mobile-nav li{
+        font-size: 15px;
+    }
+    .navbar{
+        padding-left: 0px;
+    }
+    #logo{
+        display: block;
+    }
+    .certificates-h1{
+        font-size: 50px;
+    }
+    .certificates img{
+        height:200px;
+        width:325px;
+    }
+    .certificates{
+        padding:10px 20px;
+    }
+}
 
 /* Resume Page */
 .resumePage{
@@ -207,8 +382,71 @@ a {
     padding:90px 90px;
     border:3px #3B98BB solid;
 }
+.mobile-nav{
+    display: none;
+}
 
+@media only screen and (max-width:768px){
+    .mobile-nav{
+        display: none;
+    }
+
+   #logo {
+    display: none;
+   }
+
+   .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+   
+    #resumeDoc{
+        height: 1000px;
+        width:700px;
+    }
+    .resume{
+        padding:50px 25px;
+    }  
+}
+
+@media only screen and (max-width:425px){
+    nav .desktop-nav{
+        display: none;
+    }
+
+    nav .mobile-nav{
+        display: flex;
+    }  
+
+    nav .mobile-nav li{
+        font-size: 15px;
+    }
+    .navbar{
+        padding-left: 0px;
+    }
+    #logo{
+        display: block;
+    }
+    .resume-h1{
+        font-size: 50px;
+    }
+    #resumeDoc{
+        height: 500px;
+        width:350px;
+    }
+    .resume{
+        padding:10px 10px;
+    } 
+    
+}
 /* Contact Page*/
+.mobile-form{
+    display:none;
+}
+.mobile-nav{
+    display: none;
+}
 .contactHeading{
     text-align: center;
 }
@@ -238,4 +476,63 @@ label, input {
 #linkedIn, #gitHub {
     height: 50px;
     width: 50px;
+}
+
+@media only screen and (max-width:768px){
+        .mobile-nav{
+            display: none;
+        }
+    
+       #logo {
+            display: none;
+       }
+    
+       .navbar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .mobile-form{
+            display:none;
+        }
+        .contactForm{
+            width:50%;
+            padding: 20px 50px;
+        } 
+}
+@media only screen and (max-width:425px){
+    nav .desktop-nav{
+        display: none;
+    }
+
+    nav .mobile-nav{
+        display: flex;
+    }  
+
+    nav .mobile-nav li{
+        font-size: 15px;
+    }
+    .navbar{
+        padding-left: 0px;
+    }
+    #logo{
+        display: block;
+    }
+    .desktop-form{
+        display:none;
+    }
+    .mobile-form{
+        display:block;
+    }
+    .submitButton{
+        padding: 5px 50px 5px 20px;
+        text-align: center;
+     }
+    .contact-h1{
+        font-size: 50px;
+    }
+    label, input {
+        font-size: 15px;
+    }
+    
 }

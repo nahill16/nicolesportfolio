@@ -9,19 +9,31 @@
 </head>
 <body>
 <!-- Navigation -->
-    <header class="header">
-        <nav>
-            <a href="index.html"> <img id="logo" src="resources\images\NHLogo.png"></a>
-            <ul class="navbar">
-                <li><a href="index.html#aboutMe">About Me</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li id="contact" class="contact"><a href="contact.html"> Contact</a> </li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+    <!-- Desktop Navigation -->
+    <div class="desktop-nav">
+        <a href="index.html#banner"><img id="logo" src="resources\images\NHLogo.png"></a>
+        <ul class="navbar">
+            <li id="aboutMeNav"><a href="index.html#aboutMe">About Me</a></li>
+            <li id="skillsNav"><a href="index.html#skills">Skills</a></li>
+            <li id="projectsNav"><a href="index.html#projects">Projects</a></li>
+            <li id="certificatesNav"><a href="certificates.html">Certificates</a></li>
+            <li id="resumeNav"><a href="resume.html">Resume</a></li>
+            <li id="contact"><a href="contact.html"> Contact</a></li>
+        </ul>
+    </div>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <a href="index.html#banner"><img id="logo" src="resources\images\NHLogo.png"></a>
+        <ul class="navbar">
+            <li id="certificatesNav"><a href="certificates.html">Certificates</a></li>
+            <li id="resumeNav"><a href="resume.html">Resume</a></li>
+            <li id="contact"><a href="contact.html"> Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+</header>
     <main>
 
         <h1 class="contact-h1">Contact</h1>
@@ -32,6 +44,9 @@
 <!-- Form subission to the following 
 email address will not work until
  you learn back-end -->
+
+ <!-- Desktop Form -->
+        <div class="desktop-form">
             <form action="mailto:nahill16@gmail.com" action="POST"> 
                 <label for="first-name">First Name: </label>
                 <input id="first-name" type="text" name="first-name" required>
@@ -52,6 +67,30 @@ email address will not work until
                 <br>
                 <input class="submitButton" type="submit" value="Send">
             </form>
+        </div>
+<!-- Mobile Form -->
+        <div class="mobile-form">
+        <form action="mailto:nahill16@gmail.com" action="POST"> 
+            <label for="first-name">First Name: </label>
+            <input id="first-name" type="text" name="first-name" required>
+                <br>
+                <br>
+            <label for="last-name">Last Name: </label>
+            <input id="first-name" type="text" name='last-name' required>
+            <br>
+            <br>
+            <label for="email">Email: </label>
+            <input id="email" type="email" name="email" required>
+                <br>
+                <br>
+            <label for="message">Message: </label>
+            <br>
+            <textarea id="message" name="message" rows="10" cols="25" required></textarea>
+            <br>
+            <br>
+            <input class="submitButton" type="submit" value="Send">
+        </form>
+        </div>
             </div>
         </section>
         

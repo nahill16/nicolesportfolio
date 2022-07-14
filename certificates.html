@@ -9,17 +9,29 @@
 </head>
 <body>
 <!-- Header/Navigation -->
-<header class="header">
+<header>
     <nav>
-        <a href="index.html"> <img id="logo" src="resources\images\NHLogo.png"></a>
+    <!-- Desktop Navigation -->
+    <div class="desktop-nav">
+        <a href="index.html#banner"> <img id="logo" src="resources\images\NHLogo.png"></a>
         <ul class="navbar">
-            <li><a href="index.html#aboutMe">About Me</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="certificates.html">Certificates</a></li>
-            <li><a href="resume.html" >Resume</a></li>
-            <li id="contact" class="contact"><a href="contact.html"> Contact</a> </li>
+            <li id="aboutMeNav"><a href="index.html#aboutMe">About Me</a></li>
+            <li id="skillsNav"><a href="index.html#skills">Skills</a></li>
+            <li id="projectsNav"><a href="index.html#projects">Projects</a></li>
+            <li id="certificatesNav"><a href="certificates.html">Certificates</a></li>
+            <li id="resumeNav"><a href="resume.html">Resume</a></li>
+            <li id="contact"><a href="contact.html"> Contact</a></li>
         </ul>
+    </div>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <a href="index.html#banner"><img id="logo" src="resources\images\NHLogo.png"></a>
+        <ul class="navbar">
+            <li id="certificatesNav"><a href="certificates.html">Certificates</a></li>
+            <li id="resumeNav"><a href="resume.html">Resume</a></li>
+            <li id="contact"><a href="contact.html"> Contact</a></li>
+        </ul>
+    </div>
     </nav>
 </header>
 
