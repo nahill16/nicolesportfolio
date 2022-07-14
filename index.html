@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="resources\css\style.css" type="text/css">
+    <script src="main.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,13 +34,13 @@
         </div>
 
         <div class="greeting-img">
-            <img id="profile" src="resources\images\profilePhoto.png">
+            <img id="profile" src="resources\images\profilePhoto.png" alt="Nicole Hill">
         </div>
     </section>
 <main>
     <!-- About Me -->
     <section class="aboutMe">
-            <img id="aboutMePhoto" src="resources\images\aboutMePhoto.png">
+            <img id="aboutMePhoto" src="resources\images\aboutMePhoto.png" alt="Nicole Hill">
 
         <div class="aboutMeText">
             <h2 id="aboutMe">About Me</h2>
@@ -73,11 +74,12 @@
     <!-- Projects -->
     <section class="projects">
         <h2 id="projects">Projects</h2>
-        <h3>→ EMG Controlled Robotic Arm</h3>
+        <p>Click one of the projects below to read more about it.</p>
+        <h3 class="project1">→ EMG Controlled Robotic Arm</h3>
             <section class="emg-robot">
-                <!-- <div class="emg-photos"> -->
-                    <img id="robotPhoto" src="resources\images\roboticArm.PNG">
-                    <img id="emgCircuit" src="resources\images\emgCircuit.PNG">
+                <div class="emg-photos">
+                    <img id="robotPhoto" src="resources\images\roboticArm.PNG" alt="EMG robot">
+                    <img id="emgCircuit" src="resources\images\emgCircuit.PNG" alt="EMG robot">
                 </div>
                 <div class="emg-text">
                     <p>I designed the electromyography (EMG) circuit to take the voltages produced 

@@ -152,6 +152,14 @@ a {
     margin-left: 50px;
 }
 
+.projects h3{
+    cursor: pointer;
+}
+
+.projects h3:hover{
+    color:blue;
+}
+
 .emg-robot{
     width: 50%;
     /* border: 1px black solid; */
@@ -160,6 +168,7 @@ a {
 }
 .emg-text{
     width: 600px;
+    text-align: left;
     /* border: 1px black solid; */
     margin: 0px auto;
 }
