@@ -2,18 +2,13 @@
 let emgRobot = document.getElementsByClassName("project1")[0];
 //project1 data
 let emgRobotProjectData = document.getElementsByClassName("emg-robot")[0];
-emgRobotProjectData.hidden=true;
+emgRobotProjectData.style.display = 'none';
 
-let counter = 0;
 
- //counter = 0 > content is hidden and will now be shown
- //counter = 1 > content is visible and will now be hidden
- document.getElementsByClassName("project1")[0].onclick=function(){
-    if(counter===0){
-    emgRobotProjectData.hidden=false;
-    counter=1;
+emgRobot.addEventListener('click', function(){
+    if (emgRobotProjectData.style.display === 'none') {
+        emgRobotProjectData.style.display = 'block';
     } else {
-    emgRobotProjectData.hidden=true;
-    counter=0;
+        emgRobotProjectData.style.display = 'none';
     }
-}
+});
